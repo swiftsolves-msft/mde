@@ -21,6 +21,7 @@
       "networkProtection": "enabled"
    },
    "networkProtection":{
-      "enforcementLevel":  "audit"
+      "enforcementLevel":  "audit",
+      "exclusions": []
    }
 }
