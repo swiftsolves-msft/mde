@@ -19,5 +19,8 @@
    },
    "features":{
       "networkProtection": "enabled"
+   },
+   "networkProtection":{
+      "enforcementLevel":  "audit"
    }
 }
