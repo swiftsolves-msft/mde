@@ -1,0 +1,122 @@
+{
+  "name": "Tanium Client Exclusions Example",    
+  "description": "Windows Tanium client AV exclusion example including the Asset Module",
+  "platforms": "windows10",
+  "technologies": "mdm,microsoftSense",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 2,
+  "settings": [
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+        "settingDefinitionId": "device_vendor_msft_policy_config_defender_excludedpaths",
+        "simpleSettingCollectionValue": [
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files (x86)\\Tanium\\Tanium Client",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client\\extensions\\TaniumSoftwareManager.dll",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files (x86)\\Tanium\\Tanium Client\\extensions\\TaniumSoftwareManager.dll.sig",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files (x86)\\Tanium\\Tanium Client\\TaniumClientExtensions.dll",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files (x86)\\Tanium\\Tanium Client\\TaniumClientExtensions.dll.sig",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files (x86)\\Tanium\\Tanium Client\\extensions\\SupportCX.dll",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files (x86)\\Tanium\\Tanium Client\\extensions\\SupportCX.dll.sig",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files (x86)\\Tanium\\Tanium Client\\extensions\\TaniumConfig.dll",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files (x86)\\Tanium\\Tanium Client\\extensions\\TaniumConfig.dll.sig",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          }
+        ],
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "aaf04adc-c639-464f-b4a7-152e784092e8"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+        "settingDefinitionId": "device_vendor_msft_policy_config_defender_excludedprocesses",
+        "simpleSettingCollectionValue": [
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client\\Tools\\StdUtils\\7za.exe",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client\\Tools\\StdUtils\\runasuser.exe",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client\\Tools\\StdUtils\\runasuser64.exe",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client\\Tools\\StdUtils\\TaniumExecWrapper.exe",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client\\Tools\\StdUtils\\TaniumFileInfo.exe",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client\\Tools\\StdUtils\\TPowerShell.exe",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client\\TaniumClient.exe",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client\\TaniumCX.exe",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client\\Tools\\EPI\\TaniumEndpointIndex.exe",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "C:\\Program Files\\Tanium\\Tanium Client\\Tools\\Asset\\TaniumFileEvidence.exe",
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          }
+        ],
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "96b046ed-f138-4250-9ae0-b0772a93d16f"
+        }
+      }
+    }
+  ],
+  "templateReference": {
+    "templateId": "45fea5e9-280d-4da1-9792-fb5736da0ca9_1",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Microsoft Defender Antivirus exclusions",
+    "templateDisplayVersion": "Version 1"
+  }
+}
