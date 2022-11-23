@@ -1,4 +1,5 @@
 {
+   // reference: https://docs.tanium.com/platform_deployment_reference/platform_deployment_reference/security_exceptions.html
    "antivirusEngine":{
     "exclusions":[
         // core paths, files, process
