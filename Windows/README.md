@@ -12,7 +12,8 @@ The following example can be used to call the Microsoft Graph API and create a A
 **POST** *https://graph.microsoft.com/beta/deviceManagement/configurationPolicies*
 
 **REQUEST BODY JSON**
-```{
+```
+{
     "name": "Sample AV Exclusions",
     "description": "This is an example of AV Exclusions for File, Folder, Proccess, and file extension",
     "platforms": "windows10",
