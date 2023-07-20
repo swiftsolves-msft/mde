@@ -1,0 +1,23 @@
+{
+   "antivirusEngine":{
+      "enforcementLevel":"real_time",
+      "threatTypeSettings":[
+         {
+            "key":"potentially_unwanted_application",
+            "value":"block"
+         },
+         {
+            "key":"archive_bomb",
+            "value":"audit"
+         }
+      ]
+   },
+   "cloudService":{
+      "enabled":true,
+      "automaticSampleSubmissionConsent":"safe",
+      "automaticDefinitionUpdateEnabled":true
+   },
+   "features":{
+      "ebpfSupplemetaryEventProvider": "enabled"
+   }
+}
