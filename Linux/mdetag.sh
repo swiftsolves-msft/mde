@@ -1,1 +1,1 @@
-mdatp config device-tag --name MDE-Management --value enabled
+mdatp edr tag set --name GROUP --value MDE-Management
