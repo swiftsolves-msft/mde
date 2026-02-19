@@ -1,0 +1,48 @@
+{
+    "antivirusEngine": {
+        "enforcementLevel": "real_time",
+        "behaviorMonitoring": "enabled",
+        "scanAfterDefinitionUpdate": true,
+        "scanArchives": true,
+        "maximumOnDemandScanThreads": 4,
+        "enableFileHashComputation": true,
+        "threatTypeSettings": [
+            {
+                "key": "potentially_unwanted_application",
+                "value": "block"
+            },
+            {
+                "key": "archive_bomb",
+                "value": "audit"
+            }
+        ],
+        "scanFileModifyPermissions": true,
+        "scanFileModifyOwnership": true,
+        "scanNetworkSocketEvent": true
+    },
+    "cloudService": {
+        "enabled": true,
+        "diagnosticLevel": "required",
+        "automaticSampleSubmissionConsent": "all",
+        "automaticDefinitionUpdateEnabled": true,
+        "definitionUpdatesInterval": 14400
+    },
+    "features": {
+        "moduleLoad": "enabled",
+        "supplementarySensorConfigurations": {
+            "enableFilePermissionEvents": "enabled",
+            "enableFileOwnershipEvents": "enabled",
+            "enableRawSocketEvent": "enabled",
+            "enableBootLoaderCalls": "enabled",
+            "enableProcessCalls": "enabled",
+            "enablePseudofsCalls": "enabled",
+            "enableEbpfModuleLoadEvents": "enabled",
+            "sendLowfiEvents": "enabled"
+        },
+        "ebpfSupplementaryEventProvider": "enabled"
+    },
+    "networkProtection": {
+        "enforcementLevel": "block",
+        "disableIcmpInspection": false
+    }
+}

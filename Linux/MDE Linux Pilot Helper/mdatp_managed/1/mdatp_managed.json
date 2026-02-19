@@ -1,0 +1,21 @@
+{
+    "antivirusEngine": {
+        "enforcementLevel": "real_time",
+        "behaviorMonitoring": "enabled",
+        "threatTypeSettings": [
+            {
+                "key": "potentially_unwanted_application",
+                "value": "block"
+            },
+            {
+                "key": "archive_bomb",
+                "value": "audit"
+            }
+        ]
+    },
+    "cloudService": {
+        "enabled": true,
+        "automaticSampleSubmissionConsent": "safe",
+        "automaticDefinitionUpdateEnabled": true
+    }
+}
