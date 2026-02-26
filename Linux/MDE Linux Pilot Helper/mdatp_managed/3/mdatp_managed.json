@@ -40,9 +40,5 @@
             "sendLowfiEvents": "enabled"
         },
         "ebpfSupplementaryEventProvider": "enabled"
-    },
-    "networkProtection": {
-        "enforcementLevel": "block",
-        "disableIcmpInspection": false
     }
 }
